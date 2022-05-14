@@ -1,0 +1,48 @@
+// ___________________________________________________________________
+// Global Config
+// ___________________________________________________________________
+
+//Font Stack
+$font-family--primary: 'Plus Jakarta Sans', sans-serif;
+
+// Font Weights
+$font-weight--extra-bold: 800;
+$font-weight--bold: 700;
+$font-weight--regular: 500;
+
+// Colors
+$dusk: #{'hsl(234, 25%, 52%)'};
+$slate: #{'hsl(233, 54%, 16%)'};
+$gray: #{'hsl(232, 10%, 56%)'};
+$hotpink: #{'hsl(341, 92%, 62%)'};
+$pink: #{'hsl(341, 100%, 83%)'};
+$white: #{'hsl(0, 0%, 100%)'};
+$sunrise: #{'hsl(322, 87%, 55%)', 'hsl(13, 100%, 64%)'};
+$sunset: #{'hsl(237, 100%, 64%)', 'hsl(322, 87%, 55%)'};
+
+// Color Usage
+$color-bg-light: $white;
+$color-bg-dark: $slate;
+$color-btn-primary: $slate;
+$color-btn-secondary: $sunrise;
+$color-btn-tertiary: $sunset;
+
+
+// Text
+$headingXL: 3.5rem;
+$headingL: 2.5rem;
+$headingM: 2rem;
+$headingS: 1.5rem;
+$headingXS: 1.25rem;
+$bodyM: 1.125rem;
+$bodyS: 1rem;
+
+// Line Height
+$lineXL: 70px;
+$lineL: 51px;
+$lineM: 40px;
+$line-default: 28px;
+
+// Breakpoints
+$brkpoint-md: '(min-width: 768px)';
+$brkpoint-lg: '(min-width: 1024px)';

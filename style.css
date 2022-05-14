@@ -1,0 +1,59 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: hsl(0, 0%, 100%);
+  font-family: "Plus Jakarta Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: hsl(233, 54%, 16%);
+  line-height: 51px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: hsl(0, 0%, 100%);
+  line-height: 28px;
+}
+
+h3 {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: hsl(233, 54%, 16%);
+  line-height: 28px;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 500;
+  color: hsl(232, 10%, 56%);
+  line-height: 28px;
+}
+
+a {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: hsl(341, 92%, 62%);
+  cursor: pointer;
+  text-decoration: none;
+}
+a:hover {
+  color: hsl(341, 100%, 83%);
+}
+
+/*# sourceMappingURL=style.css.map */

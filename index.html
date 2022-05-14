@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link href="style.css" rel="stylesheet" />
     
     <title>Frontend Mentor | Skilled e-learning landing page</title>
   </head>
@@ -18,93 +19,95 @@
       <button class="btn btn--primary">Get Started</button>
     </header>
 
-    <section id="hero">
-      <div class="hero__content">
-        <h1 class="hero__headline">Maximize skill, minimize budget</h1>
-        <p class="hero__copy">Our modern courses across a range of in-demand skills will give you the knowledge you need to live the life you want.</p>
-        <button class="btn btn--hero">Get Started</button>
-      </div>
-      <picture class="hero__img">
-        <!-- desktop -->
-        <source type="image/webp" media="(min-width: 1024px)" srcset="images/image-hero-desktop.webp, ./images/image-hero-desktop@2x.webp 2x">
-        <source type="image/png" media="(min-width: 1024px)" srcset="./images/image-hero-desktop.png, ./images/image-hero-desktop@2x.png 2x">
+    <main>
+      <section id="hero">
+        <div class="hero__content">
+          <h1 class="hero__headline">Maximize skill, minimize budget</h1>
+          <p class="hero__copy">Our modern courses across a range of in-demand skills will give you the knowledge you need to live the life you want.</p>
+          <button class="btn btn--hero">Get Started</button>
+        </div>
+        <picture class="hero__img">
+          <!-- desktop -->
+          <source type="image/webp" media="(min-width: 1024px)" srcset="images/image-hero-desktop.webp, ./images/image-hero-desktop@2x.webp 2x">
+          <source type="image/png" media="(min-width: 1024px)" srcset="./images/image-hero-desktop.png, ./images/image-hero-desktop@2x.png 2x">
 
-        <!-- tablet -->
-        <source type="image/webp" media="(min-width: 768px)" srcset="./images/image-hero-tablet.webp, ./images/image-hero-tablet@2x.webp 2x">
-        <source type="image/png"  media="(min-width: 768px)" srcset="./images/image-hero-tablet.png, ./images/image-hero-tablet@2x.png 2x">
+          <!-- tablet -->
+          <source type="image/webp" media="(min-width: 768px)" srcset="./images/image-hero-tablet.webp, ./images/image-hero-tablet@2x.webp 2x">
+          <source type="image/png"  media="(min-width: 768px)" srcset="./images/image-hero-tablet.png, ./images/image-hero-tablet@2x.png 2x">
 
-        <!-- mobile -->
-        <source type="image/webp" media="(max-width: 375px)" srcset="./images/image-hero-mobile.webp, ./images/image-hero-mobile@2x.webp 2x" >
-        <source type="image/png"  media="(max-width: 375px)" srcset="./images/image-hero-mobile.png, ./images/image-hero-mobile@2x.png 2x">
-          
-        <img src="./images/image-hero-mobile.png" 
-          alt="Woman viewing lesson. Caption: Members 29k - Course hours 1,451.">
-      </picture>
-    </section>
+          <!-- mobile -->
+          <source type="image/webp" media="(max-width: 375px)" srcset="./images/image-hero-mobile.webp, ./images/image-hero-mobile@2x.webp 2x" >
+          <source type="image/png"  media="(max-width: 375px)" srcset="./images/image-hero-mobile.png, ./images/image-hero-mobile@2x.png 2x">
+            
+          <img src="./images/image-hero-mobile.png" 
+            alt="Woman viewing lesson. Caption: Members 29k - Course hours 1,451.">
+        </picture>
+      </section>
 
-    <section id="courses">
-      <h2>Check out our most popular courses!</h2>
-      <article class="card">
-        <div class="card__body">
-          <img class="card__icon" src="./images/icon-animation.svg" alt="">
-          <h3 class="card__title">Animation</h3>
-          <p class="card__copy">
-            Learn the latest animation techniques to create stunning motion design and captivate your audience.
-          </p>
-          <div class="card__actions">
-            <a class="card__link" href="#" target="_blank">Get Started</a>
+      <section id="courses">
+        <h2>Check out our most popular courses!</h2>
+        <article class="card">
+          <div class="card__body">
+            <img class="card__icon" src="./images/icon-animation.svg" alt="">
+            <h3 class="card__title">Animation</h3>
+            <p class="card__copy">
+              Learn the latest animation techniques to create stunning motion design and captivate your audience.
+            </p>
+            <div class="card__actions">
+              <a class="card__link" href="#" target="_blank">Get Started</a>
+            </div>
           </div>
-        </div>
-      </article>
-      <article class="card">
-        <div class="card__body">
-          <img class="card__icon" src="./images/icon-design.svg" alt="">
-          <h3 class="card__title">Design</h3>
-          <p class="card__copy">
-            Create beautiful, usable interfaces to help shape the future of how the web looks.
-          </p>
-          <div class="card__actions">
-            <a class="card__link" href="#" target="_blank">Get Started</a>
+        </article>
+        <article class="card">
+          <div class="card__body">
+            <img class="card__icon" src="./images/icon-design.svg" alt="">
+            <h3 class="card__title">Design</h3>
+            <p class="card__copy">
+              Create beautiful, usable interfaces to help shape the future of how the web looks.
+            </p>
+            <div class="card__actions">
+              <a class="card__link" href="#" target="_blank">Get Started</a>
+            </div>
           </div>
-        </div>
-      </article>
-      <article class="card">
-        <div class="card__body">
-          <img class="card__icon" src="./images/icon-photography.svg" alt="">
-          <h3 class="card__title">Photography</h3>
-          <p class="card__copy">
-            Explore critical fundamentals like lighting, composition, and focus to capture exceptional photos.
-          </p>
-          <div class="card__actions">
-            <a class="card__link" href="#" target="_blank">Get Started</a>
+        </article>
+        <article class="card">
+          <div class="card__body">
+            <img class="card__icon" src="./images/icon-photography.svg" alt="">
+            <h3 class="card__title">Photography</h3>
+            <p class="card__copy">
+              Explore critical fundamentals like lighting, composition, and focus to capture exceptional photos.
+            </p>
+            <div class="card__actions">
+              <a class="card__link" href="#" target="_blank">Get Started</a>
+            </div>
           </div>
-        </div>
-      </article>
-      <article class="card">
-        <div class="card__body">
-          <img class="card__icon" src="./images/icon-crypto.svg" alt="">
-          <h3 class="card__title">Crypto</h3>
-          <p class="card__copy">
-            All you need to know to get started investing in crypto. Go from beginner to advanced with this 54 hour course.
-          </p>
-          <div class="card__actions">
-            <a class="card__link" href="#" target="_blank">Get Started</a>
+        </article>
+        <article class="card">
+          <div class="card__body">
+            <img class="card__icon" src="./images/icon-crypto.svg" alt="">
+            <h3 class="card__title">Crypto</h3>
+            <p class="card__copy">
+              All you need to know to get started investing in crypto. Go from beginner to advanced with this 54 hour course.
+            </p>
+            <div class="card__actions">
+              <a class="card__link" href="#" target="_blank">Get Started</a>
+            </div>
           </div>
-        </div>
-      </article>
-      <article class="card">
-        <div class="card__body">
-          <img class="card__icon" src="./images/icon-business.svg" alt="">
-          <h3 class="card__title">Business</h3>
-          <p class="card__copy">
-            A step-by-step playbook to help you start, scale, and sustain your business without outside investment.
-          </p>
-          <div class="card__actions">
-            <a class="card__link" href="#" target="_blank">Get Started</a>
+        </article>
+        <article class="card">
+          <div class="card__body">
+            <img class="card__icon" src="./images/icon-business.svg" alt="">
+            <h3 class="card__title">Business</h3>
+            <p class="card__copy">
+              A step-by-step playbook to help you start, scale, and sustain your business without outside investment.
+            </p>
+            <div class="card__actions">
+              <a class="card__link" href="#" target="_blank">Get Started</a>
+            </div>
           </div>
-        </div>
-      </article>
-    </section>
+        </article>
+      </section>
+    </main>
     <footer>
       <img class="logo" src="./images/logo-light.svg" alt="Skilled e-learning courses. Click for home.">
       <button class="btn btn--secondary">Get Started</button>

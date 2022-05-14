@@ -1,0 +1,52 @@
+// ___________________________________________________________________
+// Base Styles
+// ___________________________________________________________________
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: $color-bg-light;
+  font-family: $font-family--primary;
+  margin: 0;
+  padding: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+h1 {
+  @include text($headingL, $font-weight--extra-bold, $slate);
+  line-height: $lineL;
+}
+
+h2 {
+  @include text($headingS, $font-weight--extra-bold, $white);
+  line-height: $line-default;
+}
+
+h3 {
+  @include text($headingXS, $font-weight--extra-bold, $slate);
+  line-height: $line-default;
+}
+
+p {
+  @include text($bodyS, $font-weight--regular, $gray);
+  line-height: $line-default;
+}
+
+a {
+  @include text($bodyM, $font-weight--bold, $hotpink);
+  cursor: pointer;
+  text-decoration: none;
+
+  &:hover {
+    color: $pink;
+  }
+}
