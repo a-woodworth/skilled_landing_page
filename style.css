@@ -56,4 +56,67 @@ a:hover {
   color: hsl(341, 100%, 83%);
 }
 
+.btn {
+  border-radius: 28px;
+  font-size: 1rem;
+  font-weight: 700;
+  color: hsl(0, 0%, 100%);
+  border: none;
+  cursor: pointer;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  line-height: 28px;
+  padding: 10px 24px;
+  width: 140px;
+}
+
+.btn--primary {
+  background-color: hsl(233, 54%, 16%);
+}
+.btn--primary:hover {
+  background-color: hsl(234, 25%, 52%);
+}
+
+.btn--secondary {
+  background: linear-gradient(180deg, hsl(237, 100%, 64%), hsl(322, 87%, 55%));
+}
+
+.btn--hero {
+  background: linear-gradient(180deg, hsl(322, 87%, 55%), hsl(13, 100%, 64%));
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: auto;
+  grid-template-areas: "header" "main" "footer";
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  grid-area: header;
+  padding: 22px 16px;
+  width: 100vw;
+}
+
+.logo {
+  width: 89px;
+}
+
+.logo img {
+  max-width: 100%;
+}
+
+footer {
+  background-color: hsl(233, 54%, 16%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  grid-area: footer;
+  height: 120px;
+  padding: 22px 16px;
+  width: 100vw;
+}
+
 /*# sourceMappingURL=style.css.map */
