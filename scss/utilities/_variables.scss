@@ -14,15 +14,23 @@ $font-weight--regular: 500;
 $dusk: #{'hsl(234, 25%, 52%)'};
 $slate: #{'hsl(233, 54%, 16%)'};
 $gray: #{'hsl(232, 10%, 56%)'};
+$ghost: #{'linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%)'};
 $hotpink: #{'hsl(341, 92%, 62%)'};
 $pink: #{'hsl(341, 100%, 83%)'};
+$rainbow-sherbet: #{'linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%)'};
 $white: #{'hsl(0, 0%, 100%)'};
 $sunrise: #{'hsl(322, 87%, 55%)', 'hsl(13, 100%, 64%)'};
 $sunset: #{'hsl(237, 100%, 64%)', 'hsl(322, 87%, 55%)'};
+$hover-sunrise: #{'linear-gradient(0deg, rgba(255, 255, 255, 0.5)', 
+  'rgba(255, 255, 255, 0.5))', 'linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%)'};
+$hover-sunset: #{'linear-gradient(0deg, rgba(255, 255, 255, 0.5)', 
+  'rgba(255, 255, 255, 0.5))', 'linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%)'};
 
 // Color Usage
 $color-bg-light: $white;
 $color-bg-dark: $slate;
+$color-bg-pink: $rainbow-sherbet;
+$color-bg-gray: $ghost;
 $color-btn-primary: $slate;
 $color-btn-secondary: $sunset;
 $color-btn-tertiary: $sunrise;

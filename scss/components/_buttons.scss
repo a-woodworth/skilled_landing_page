@@ -22,17 +22,17 @@
 }
 
 .btn--secondary {
-  background: linear-gradient(180deg, $color-btn-secondary);
+  background: linear-gradient($color-btn-secondary);
 
-  // &:hover {
-    
-  // }
+  &:hover {
+    background: $hover-sunset;
+  }
 }
 
 .btn--hero {
   background: linear-gradient(180deg, $color-btn-tertiary);
 
-  // &:hover {
-
-  // }
+  &:hover {
+    background: $hover-sunrise;
+  }
 }
