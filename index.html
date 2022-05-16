@@ -13,10 +13,10 @@
     <title>Frontend Mentor | Skilled e-learning landing page</title>
   </head>
 
-  <body class="container">
+  <body class="container" vocab="https://schema.org/">
     <header>
       <div class="logo">
-        <img src="./images/logo-dark.svg" alt="Skilled e-learning courses. Click for home.">
+        <a href="#"><img src="./images/logo-dark.svg" alt="Skilled e-learning courses. Click for home."></a>
       </div>
       <button class="btn btn--primary">Get Started</button>
     </header>
@@ -38,8 +38,8 @@
           <source type="image/png"  media="(min-width: 768px)" srcset="./images/image-hero-tablet.png, ./images/image-hero-tablet@2x.png 2x">
 
           <!-- mobile -->
-          <source type="image/webp" media="(max-width: 375px)" srcset="./images/image-hero-mobile.webp, ./images/image-hero-mobile@2x.webp 2x" >
-          <source type="image/png"  media="(max-width: 375px)" srcset="./images/image-hero-mobile.png, ./images/image-hero-mobile@2x.png 2x">
+          <source type="image/webp" srcset="./images/image-hero-mobile.webp, ./images/image-hero-mobile@2x.webp 2x" >
+          <source type="image/png"  srcset="./images/image-hero-mobile.png, ./images/image-hero-mobile@2x.png 2x">
             
           <img src="./images/image-hero-mobile.png" 
             alt="Woman viewing lesson. Caption: Members 29k - Course hours 1,451.">
@@ -49,61 +49,66 @@
       <section id="courses">
         <h2>Check out our most popular courses!</h2>
         <article class="card">
-          <div class="card__body">
+          <div class="card__body" typeof="Course">
             <img class="card__icon" src="./images/icon-animation.svg" alt="">
-            <h3 class="card__title">Animation</h3>
-            <p class="card__copy">
+            <h3 class="card__title" property="name">Animation</h3>
+            <p class="card__copy" property="description">
               Learn the latest animation techniques to create stunning motion design and captivate your audience.
             </p>
-            <div class="card__actions">
+            <div class="card__actions" typeof="CourseInstance">
+              <meta property="courseMode" content="online">
               <a class="card__link" href="#" target="_blank">Get Started</a>
             </div>
           </div>
         </article>
         <article class="card">
-          <div class="card__body">
+          <div class="card__body" typeof="Course">
             <img class="card__icon" src="./images/icon-design.svg" alt="">
-            <h3 class="card__title">Design</h3>
-            <p class="card__copy">
+            <h3 class="card__title" property="name">Design</h3>
+            <p class="card__copy" property="description">
               Create beautiful, usable interfaces to help shape the future of how the web looks.
             </p>
-            <div class="card__actions">
+            <div class="card__actions" typeof="CourseInstance">
+              <meta property="courseMode" content="online">
               <a class="card__link" href="#" target="_blank">Get Started</a>
             </div>
           </div>
         </article>
         <article class="card">
-          <div class="card__body">
+          <div class="card__body" typeof="Course">
             <img class="card__icon" src="./images/icon-photography.svg" alt="">
-            <h3 class="card__title">Photography</h3>
-            <p class="card__copy">
+            <h3 class="card__title" property="name">Photography</h3>
+            <p class="card__copy" property="description">
               Explore critical fundamentals like lighting, composition, and focus to capture exceptional photos.
             </p>
-            <div class="card__actions">
+            <div class="card__actions" typeof="CourseInstance">
+              <meta property="courseMode" content="online">
               <a class="card__link" href="#" target="_blank">Get Started</a>
             </div>
           </div>
         </article>
         <article class="card">
-          <div class="card__body">
+          <div class="card__body" typeof="Course">
             <img class="card__icon" src="./images/icon-crypto.svg" alt="">
-            <h3 class="card__title">Crypto</h3>
-            <p class="card__copy">
+            <h3 class="card__title" property="name">Crypto</h3>
+            <p class="card__copy" property="description">
               All you need to know to get started investing in crypto. Go from beginner to advanced with this 54 hour course.
             </p>
-            <div class="card__actions">
+            <div class="card__actions" typeof="CourseInstance">
+              <meta property="courseMode" content="online">
               <a class="card__link" href="#" target="_blank">Get Started</a>
             </div>
           </div>
         </article>
         <article class="card">
-          <div class="card__body">
+          <div class="card__body" typeof="Course">
             <img class="card__icon" src="./images/icon-business.svg" alt="">
-            <h3 class="card__title">Business</h3>
-            <p class="card__copy">
+            <h3 class="card__title" property="name">Business</h3>
+            <p class="card__copy" property="description">
               A step-by-step playbook to help you start, scale, and sustain your business without outside investment.
             </p>
-            <div class="card__actions">
+            <div class="card__actions" typeof="CourseInstance">
+              <meta property="courseMode" content="online">
               <a class="card__link" href="#" target="_blank">Get Started</a>
             </div>
           </div>

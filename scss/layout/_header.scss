@@ -7,14 +7,12 @@ header {
   justify-content: space-between;
   align-items: center;
   grid-area: header;
-  padding: 22px 16px;
+  height: 80px;
+  margin: auto;
+  padding: 0 16px;
   width: 100vw;
 }
 
 .logo {
   width: 89px;
-}
-
-.logo img {
-  max-width: 100%;
 }

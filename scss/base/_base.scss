@@ -21,6 +21,13 @@ body {
   min-height: 100vh;
 }
 
+h1, 
+h2, 
+h3, 
+p {
+  margin: 0;
+}
+
 h1 {
   @include text($headingL, $font-weight--extra-bold, $slate);
   line-height: $lineL;
@@ -49,4 +56,8 @@ a {
   &:hover {
     color: $pink;
   }
+}
+
+img {
+  max-width: 100%;
 }

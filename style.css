@@ -17,11 +17,18 @@ body {
   min-height: 100vh;
 }
 
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
 h1 {
   font-size: 2.5rem;
   font-weight: 800;
   color: hsl(233, 54%, 16%);
-  line-height: 51px;
+  line-height: 50px;
 }
 
 h2 {
@@ -54,6 +61,10 @@ a {
 }
 a:hover {
   color: hsl(341, 100%, 83%);
+}
+
+img {
+  max-width: 100%;
 }
 
 .btn {
@@ -90,6 +101,28 @@ a:hover {
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
 }
 
+.card__body {
+  border-radius: 10px;
+  background-color: hsl(0, 0%, 100%);
+  box-shadow: 0px 25px 50px rgba(6, 22, 141, 0.0442381);
+  margin-bottom: 40px;
+  padding: 30px;
+  position: relative;
+}
+
+.card__icon {
+  position: absolute;
+  top: -24px;
+}
+
+.card__title {
+  margin: 24px 0 16px;
+}
+
+.card__copy {
+  margin-bottom: 24px;
+}
+
 .container {
   display: grid;
   grid-template-columns: 1fr;
@@ -102,7 +135,9 @@ header {
   justify-content: space-between;
   align-items: center;
   grid-area: header;
-  padding: 22px 16px;
+  height: 80px;
+  margin: auto;
+  padding: 0 16px;
   width: 100vw;
 }
 
@@ -110,37 +145,50 @@ header {
   width: 89px;
 }
 
-.logo img {
-  max-width: 100%;
+main {
+  grid-area: main;
+}
+
+#hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero__content {
+  margin: 24px auto;
+  padding: 0 16px;
+  width: 100vw;
+}
+
+.hero__headline {
+  margin-bottom: 26px;
+}
+
+.hero__copy {
+  margin-bottom: 24px;
+}
+
+picture {
+  margin: auto;
+}
+
+.hero__image {
+  overflow: hidden;
 }
 
 #courses {
   background: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%);
-  padding: 1rem;
+  padding: 0 1rem 80px 1rem;
 }
 
 #courses h2 {
   border-radius: 10px;
   background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
   height: 120px;
-  margin-bottom: 40px;
-  padding: 100px 30px;
+  margin: 0 0 40px;
+  padding: 20px;
   width: 100%;
-}
-
-.card__body {
-  border-radius: 10px;
-  background-color: hsl(0, 0%, 100%);
-  box-shadow: 0px 25px 50px rgba(6, 22, 141, 0.0442381);
-  height: 260px;
-  margin-bottom: 40px;
-  padding: 30px;
-  position: relative;
-}
-
-.card__icon {
-  position: absolute;
-  top: -24px;
 }
 
 footer {
@@ -150,6 +198,7 @@ footer {
   align-items: center;
   grid-area: footer;
   height: 120px;
+  margin: auto;
   padding: 22px 16px;
   width: 100vw;
 }
