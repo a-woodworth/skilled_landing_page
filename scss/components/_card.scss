@@ -23,3 +23,11 @@
 .card__copy {
   margin-bottom: 24px;
 }
+
+.card__link {
+  @include text($bodyM, $font-weight--bold, $hotpink);
+
+  &:hover {
+    color: $pink;
+  }
+}

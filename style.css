@@ -53,14 +53,9 @@ p {
 }
 
 a {
-  font-size: 1.125rem;
-  font-weight: 700;
-  color: hsl(341, 92%, 62%);
   cursor: pointer;
+  display: block;
   text-decoration: none;
-}
-a:hover {
-  color: hsl(341, 100%, 83%);
 }
 
 img {
@@ -72,8 +67,6 @@ img {
   font-size: 1rem;
   font-weight: 700;
   color: hsl(0, 0%, 100%);
-  border: none;
-  cursor: pointer;
   font-family: "Plus Jakarta Sans", sans-serif;
   line-height: 28px;
   padding: 10px 24px;
@@ -96,6 +89,8 @@ img {
 
 .btn--hero {
   background: linear-gradient(180deg, hsl(322, 87%, 55%), hsl(13, 100%, 64%));
+  padding: 15px 38px;
+  width: 168px;
 }
 .btn--hero:hover {
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
@@ -121,6 +116,15 @@ img {
 
 .card__copy {
   margin-bottom: 24px;
+}
+
+.card__link {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: hsl(341, 92%, 62%);
+}
+.card__link:hover {
+  color: hsl(341, 100%, 83%);
 }
 
 .container {

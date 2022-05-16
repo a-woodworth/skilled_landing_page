@@ -49,13 +49,9 @@ p {
 }
 
 a {
-  @include text($bodyM, $font-weight--bold, $hotpink);
   cursor: pointer;
+  display: block;
   text-decoration: none;
-
-  &:hover {
-    color: $pink;
-  }
 }
 
 img {

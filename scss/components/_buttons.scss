@@ -1,12 +1,10 @@
 // ___________________________________________________________________
-// Buttons
+// Button Links
 // ___________________________________________________________________
 
 .btn {
   @include rounded(28px);
   @include text($bodyS, $font-weight--bold, $white);
-  border: none;
-  cursor: pointer;
   font-family: $font-family--primary;
   line-height: $line-default;
   padding: 10px 24px;
@@ -31,6 +29,8 @@
 
 .btn--hero {
   background: linear-gradient(180deg, $color-btn-tertiary);
+  padding: 15px 38px;
+  width: 168px;
 
   &:hover {
     background: $hover-sunrise;
