@@ -2,17 +2,21 @@
 // Header
 // ___________________________________________________________________
 
-header {
+.main-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
   grid-area: header;
-  height: 80px;
-  margin: auto;
-  padding: 0 16px;
+  padding: 1rem 1rem 1.375rem 1rem;
   width: 100vw;
+
+  @media #{$brkpoint-md} {
+    padding: 1.5rem 2.5rem 4.5rem 2.5rem;
+  }
 }
 
 .logo {
-  width: 89px;
+  width: 5.5625rem;
 }

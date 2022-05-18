@@ -19,6 +19,7 @@ body {
   padding: 0;
   min-width: 100vw;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 h1, 
@@ -26,6 +27,7 @@ h2,
 h3, 
 p {
   margin: 0;
+  padding: 0;
 }
 
 h1 {
@@ -34,26 +36,27 @@ h1 {
 }
 
 h2 {
-  @include text($headingS, $font-weight--extra-bold, $white);
-  line-height: $line-default;
+  @include text($lineS, $font-weight--extra-bold, $white);
+  line-height: $lineS;
 }
 
 h3 {
   @include text($headingXS, $font-weight--extra-bold, $slate);
-  line-height: $line-default;
+  line-height: $lineM;
 }
 
 p {
   @include text($bodyS, $font-weight--regular, $gray);
-  line-height: $line-default;
+  line-height: $line__default;
 }
 
 a {
   cursor: pointer;
-  display: block;
+  display: inline-flex;
   text-decoration: none;
-}
 
-img {
-  max-width: 100%;
+  &:focus {
+   outline: auto 2px Highlight; // for non-webkit browsers
+   outline: auto 5px -webkit-focus-ring-color; // for webkit browsers
+  }
 }

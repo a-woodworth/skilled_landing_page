@@ -2,14 +2,18 @@
 // Footer
 // ___________________________________________________________________
 
-footer {
+.main-footer {
   background-color: $slate;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
   grid-area: footer;
-  height: 120px;
-  margin: auto;
-  padding: 22px 16px;
+  padding: 2.25rem 1rem;
   width: 100vw;
+
+  @media #{$brkpoint-md} {
+    padding: 2.25rem 2.5rem;
+  }
 }

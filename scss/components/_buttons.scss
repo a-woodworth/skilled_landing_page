@@ -3,12 +3,12 @@
 // ___________________________________________________________________
 
 .btn {
-  @include rounded(28px);
+  @include rounded(1.75rem);
   @include text($bodyS, $font-weight--bold, $white);
   font-family: $font-family--primary;
-  line-height: $line-default;
-  padding: 10px 24px;
-  width: 140px;
+  line-height: $line-BodyS;
+  padding: .625rem 1.5rem;
+  width: 8.75rem;
 }
 
 .btn--primary {
@@ -29,8 +29,9 @@
 
 .btn--hero {
   background: linear-gradient(180deg, $color-btn-tertiary);
-  padding: 15px 38px;
-  width: 168px;
+  line-height: $line__default;
+  padding: .9375rem 2.375rem;
+  width: 10.5rem;
 
   &:hover {
     background: $hover-sunrise;

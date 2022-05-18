@@ -2,22 +2,31 @@
 // Containers
 // ___________________________________________________________________
 
-.container {
+.container {  
   display: grid;
-  grid-template-columns: 1fr;
   grid-auto-rows: auto;
   grid-template-areas: 
     "header"
     "main"
     "footer";
-
-  // @media #{$brkpoint-md} {
-  // grid-template-columns: 1fr 1fr;
-  // grid-template-areas:
-  //   "header header"
-  //   "main main"
-  //   "footer footer";
-  // }
+  margin-inline: auto;
+  overflow-x: hidden;
 }
 
+.course_container {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  padding: 0 1rem;
+  width: 100vw;
 
+  @media #{$brkpoint-md} {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 2.5rem;
+  }
+
+  @media #{$brkpoint-lg} {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

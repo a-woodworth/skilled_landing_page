@@ -14,17 +14,20 @@ $font-weight--regular: 500;
 $dusk: #{'hsl(234, 25%, 52%)'};
 $slate: #{'hsl(233, 54%, 16%)'};
 $ghost: #{'linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%)'};
-$gray: #{'hsl(232, 10%, 56%)'};
-$hotpink: #{'hsl(341, 92%, 62%)'};
 $pink: #{'hsl(341, 100%, 83%)'};
 $rainbow-sherbet: #{'linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%)'};
 $white: #{'hsl(0, 0%, 100%)'};
-$sunrise: #{'hsl(322, 87%, 55%)', 'hsl(13, 100%, 64%)'};
 $sunset: #{'hsl(237, 100%, 64%)', 'hsl(322, 87%, 55%)'};
 $hover-sunrise: #{'linear-gradient(0deg, rgba(255, 255, 255, 0.5)', 
   'rgba(255, 255, 255, 0.5))', 'linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%)'};
 $hover-sunset: #{'linear-gradient(0deg, rgba(255, 255, 255, 0.5)', 
   'rgba(255, 255, 255, 0.5))', 'linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%)'};
+
+// Changed colors from design spec to pass Accessibility Color Contrast Ratio
+// Used Color Contrast Tool at https://color.review/ to make adjustments
+$gray: #{'hsl(232, 10%, 48%)'};
+$hotpink: #{'hsl(341, 72%, 52%)'};
+$sunrise: #{'hsl(322, 77%, 49%)', 'hsl(13, 100%, 44%)'};
 
 // Color Usage
 $color-bg-light: $white;
@@ -45,11 +48,14 @@ $bodyM: 1.125rem;
 $bodyS: 1rem;
 
 // Line Height
-$lineXL: 70px;
-$lineL: 50px;
-$lineM: 40px;
-$line-default: 28px;
+$lineXL: 1.25;
+$lineL: 1.275;
+$lineM: 1.25;
+$lineS: 1.167;
+$line__default: 1.625;
+$line-BodyM: 1.5;
+$line-BodyS: 1.75;
 
 // Breakpoints
-$brkpoint-md: '(min-width: 768px)';
+$brkpoint-md: '(min-width: 48rem)';
 $brkpoint-lg: '(min-width: 1024px)';

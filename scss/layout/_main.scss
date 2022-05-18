@@ -10,40 +10,54 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  padding: 1.375rem 1rem 0 1rem;
+  width: 100vw;
+
+  @media #{$brkpoint-md} {
+    flex-direction: row;
+    padding: 1.375rem 2.5rem 12rem 2.5rem;
+  }
 }
 
 .hero__content {
-  margin: 24px auto;
-  padding: 0 16px;
-  width: 100vw;
+  // flex-basis: 100%;
+
+  @media #{$brkpoint-md} {
+    flex-basis: 60%;
+  }
 }
 
-.hero__headline {
-  margin-bottom: 26px;
+.hero__heading {
+  margin-bottom: 1.625rem;
 }
 
-.hero__copy {
-  margin-bottom: 24px;
-}
-
-picture {
-  margin: auto;
+.hero__text {
+  margin-bottom: 1.5rem;
 }
 
 .hero__image {
-  overflow: hidden;
+  // flex-basis: 100%;
+
+  @media #{$brkpoint-md} {
+    flex-basis: 40%;
+    position: relative;
+    width: 85vw;
+  }
+}
+
+.hero__image img {
+  max-width: 100%;
+
+  @media #{$brkpoint-md} {
+    max-width: none;
+    position: absolute;
+    top: -400px;
+    right: -325px;
+    min-height: 0;
+  }
 }
 
 #courses {
   background: $color-bg-gray;
-  padding: 0 1rem 80px 1rem;
-}
-
-#courses h2 {
-  @include rounded(10px);
-  background: $color-bg-pink;
-  height: 120px;
-  margin: 0 0 40px;
-  padding: 20px;
-  width: 100%;
 }
