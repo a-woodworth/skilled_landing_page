@@ -4,7 +4,7 @@
 
 .container {  
   display: grid;
-  grid-auto-rows: auto;
+  grid-template-rows: 1fr;
   grid-template-areas: 
     "header"
     "main"
@@ -18,15 +18,20 @@
   flex-direction: column;
   gap: 2.5rem;
   padding: 0 1rem;
-  width: 100vw;
 
   @media #{$brkpoint-md} {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    column-gap: 1.875rem;
     padding: 0 2.5rem;
   }
 
-  @media #{$brkpoint-lg} {
-    grid-template-columns: repeat(3, 1fr);
+  @media #{$brkpoint-xl} {
+    grid-template-columns:  repeat(3, 1fr);
+    column-gap: 1.875rem;
+    row-gap: 5rem;
+    padding: 5rem 2.5rem;
+    max-width: 1440px;
+    width: 100%;
   }
 }

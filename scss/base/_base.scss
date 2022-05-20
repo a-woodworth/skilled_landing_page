@@ -19,7 +19,6 @@ body {
   padding: 0;
   min-width: 100vw;
   min-height: 100vh;
-  overflow-x: hidden;
 }
 
 h1, 
@@ -36,7 +35,7 @@ h1 {
 }
 
 h2 {
-  @include text($lineS, $font-weight--extra-bold, $white);
+  @include text($headingS, $font-weight--extra-bold, $white);
   line-height: $lineS;
 }
 
