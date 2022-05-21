@@ -6,6 +6,7 @@
   min-width: calc(100% - 2rem);
   margin-inline: auto;
   padding-inline: 1rem;
+  margin-inline: auto;
 
   @media #{$brkpoint-md} {
     width: calc(100% - 5rem);

@@ -70,6 +70,13 @@ a:focus {
   outline: auto 5px -webkit-focus-ring-color;
 }
 
+header,
+main,
+footer {
+  max-width: 90rem;
+  margin-inline: auto;
+}
+
 .btn {
   border-radius: 1.75rem;
   font-size: 1rem;
@@ -238,6 +245,7 @@ a:focus {
   min-width: calc(100% - 2rem);
   margin-inline: auto;
   padding-inline: 1rem;
+  margin-inline: auto;
 }
 @media (min-width: 48rem) {
   .container {
@@ -299,10 +307,6 @@ a:focus {
   .logo {
     width: 7.125rem;
   }
-}
-
-main {
-  max-width: 100%;
 }
 
 #hero {
