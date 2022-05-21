@@ -12,14 +12,6 @@
   }
 }
 
-.card:last-child {
-  margin-bottom: 5rem;
-
-  @media #{$brkpoint-xl} {
-    margin-bottom: 0;
-  }
-}
-
 .card__heading,
 .card__body {
   display: flex;
@@ -49,6 +41,7 @@
     @media #{$brkpoint-xl} {
       @include text($headingM, $font-weight--extra-bold, $white);
       line-height: $lineM;
+      padding: 2rem 1.5rem 2rem 1.5rem;
     }
   }
 }

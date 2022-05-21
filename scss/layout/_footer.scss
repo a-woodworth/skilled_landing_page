@@ -3,17 +3,18 @@
 // ___________________________________________________________________
 
 .main-footer {
-  background-color: $slate;
+  background-color: $color-bg-dark;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   gap: 1rem;
-  grid-area: footer;
-  padding: 2.25rem 1rem;
-  max-width: 100%;
+  padding-top: 2.25rem;
+  padding-bottom: 2.25rem;
+  width: 100%;
 
-  @media #{$brkpoint-md} {
-    padding: 2.25rem 2.5rem;
+  @media #{$brkpoint-lg} {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
 }

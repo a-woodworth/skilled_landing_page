@@ -13,8 +13,7 @@ body {
   font-family: "Plus Jakarta Sans", sans-serif;
   margin: 0;
   padding: 0;
-  min-width: 100vw;
-  min-height: 100vh;
+  overflow-x: hidden;
 }
 
 h1,
@@ -30,6 +29,14 @@ h1 {
   font-weight: 800;
   color: hsl(233, 54%, 16%);
   line-height: 1.275;
+}
+@media (min-width: 90rem) {
+  h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: hsl(233, 54%, 16%);
+    line-height: 1.25;
+  }
 }
 
 h2 {
@@ -97,6 +104,16 @@ a:focus {
 .btn--hero:hover {
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
 }
+@media (min-width: 69.375rem) {
+  .btn--hero {
+    border-radius: 2rem;
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+    line-height: 1.5rem;
+    padding: 1.25rem 2rem;
+  }
+}
 
 @media (min-width: 48rem) {
   .card {
@@ -109,22 +126,13 @@ a:focus {
   }
 }
 
-.card:last-child {
-  margin-bottom: 5rem;
-}
-@media (min-width: 75rem) {
-  .card:last-child {
-    margin-bottom: 0;
-  }
-}
-
 .card__heading,
 .card__body {
   display: flex;
   flex-direction: column;
   height: 100%;
 }
-@media (min-width: 75rem) {
+@media (min-width: 90rem) {
   .card__heading,
 .card__body {
     width: 21.875rem;
@@ -148,12 +156,13 @@ a:focus {
     padding: 2rem 1.25rem 2rem 1.25rem;
   }
 }
-@media (min-width: 75rem) {
+@media (min-width: 90rem) {
   .card__heading h2 {
     font-size: 2rem;
     font-weight: 800;
     color: hsl(0, 0%, 100%);
     line-height: 1.25;
+    padding: 2rem 1.5rem 2rem 1.5rem;
   }
 }
 
@@ -169,7 +178,7 @@ a:focus {
     padding: 0 1.25rem 0 1.25rem;
   }
 }
-@media (min-width: 75rem) {
+@media (min-width: 90rem) {
   .card__body {
     padding: 0 2rem 0 2rem;
     width: 21.875rem;
@@ -185,7 +194,7 @@ a:focus {
   margin-bottom: 1rem;
   padding-top: 3.5rem;
 }
-@media (min-width: 75rem) {
+@media (min-width: 90rem) {
   .card__title {
     margin-bottom: 1.5rem;
     padding-top: 4rem;
@@ -195,7 +204,7 @@ a:focus {
 .card__text {
   margin-bottom: 1.5rem;
 }
-@media (min-width: 75rem) {
+@media (min-width: 90rem) {
   .card__text {
     font-size: 1.125rem;
     font-weight: 500;
@@ -226,35 +235,44 @@ a:focus {
 }
 
 .container {
-  display: grid;
-  grid-template-rows: 1fr;
-  grid-template-areas: "header" "main" "footer";
+  min-width: calc(100% - 2rem);
   margin-inline: auto;
-  overflow-x: hidden;
+  padding-inline: 1rem;
+}
+@media (min-width: 48rem) {
+  .container {
+    width: calc(100% - 5rem);
+    padding-inline: 2.5rem;
+  }
+}
+@media (min-width: 69.375rem) {
+  .container {
+    width: calc(100% - 20.625rem);
+    padding-inline: 10.3125rem;
+  }
 }
 
-.course_container {
+.course-container {
   display: flex;
   flex-direction: column;
   gap: 2.5rem;
-  padding: 0 1rem;
 }
 @media (min-width: 48rem) {
-  .course_container {
+  .course-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 1.875rem;
-    padding: 0 2.5rem;
+    width: fit-content;
+    margin-inline: auto;
   }
 }
-@media (min-width: 75rem) {
-  .course_container {
+@media (min-width: 69.375rem) {
+  .course-container {
     grid-template-columns: repeat(3, 1fr);
     column-gap: 1.875rem;
     row-gap: 5rem;
-    padding: 5rem 2.5rem;
-    max-width: 1440px;
-    width: 100%;
+    justify-items: center;
+    align-items: center;
   }
 }
 
@@ -264,23 +282,27 @@ a:focus {
   align-items: center;
   flex-wrap: wrap;
   gap: 1rem;
-  grid-area: header;
-  padding: 1rem 1rem 1.375rem 1rem;
-  max-width: 100%;
+  padding-top: 1rem;
+  padding-bottom: 2.5rem;
+  width: 100%;
 }
 @media (min-width: 48rem) {
   .main-header {
-    padding: 1.5rem 2.5rem 4.5rem 2.5rem;
+    padding-top: 1.5rem;
   }
 }
 
 .logo {
   width: 5.5625rem;
 }
+@media (min-width: 69.375rem) {
+  .logo {
+    width: 7.125rem;
+  }
+}
 
 main {
-  grid-area: main;
-  width: 100%;
+  max-width: 100%;
 }
 
 #hero {
@@ -300,10 +322,20 @@ main {
     padding: 1.375rem 2.5rem 12rem 2.5rem;
   }
 }
+@media (min-width: 69.375rem) {
+  #hero {
+    padding: 8.75rem 10.3125rem 18.25rem 10.3125rem;
+  }
+}
 
 @media (min-width: 48rem) {
   .hero__content {
     flex-basis: 55%;
+  }
+}
+@media (min-width: 90rem) {
+  .hero__content {
+    flex-basis: 65%;
   }
 }
 
@@ -315,6 +347,12 @@ main {
     width: 25rem;
   }
 }
+@media (min-width: 90rem) {
+  .hero__heading {
+    margin-bottom: 1.875rem;
+    width: 28.75rem;
+  }
+}
 
 .hero__text {
   margin-bottom: 1.5rem;
@@ -324,13 +362,34 @@ main {
     width: 25rem;
   }
 }
+@media (min-width: 90rem) {
+  .hero__text {
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: hsl(232, 10%, 48%);
+    line-height: 1.5;
+    margin-bottom: 2.5rem;
+    width: 27.8125rem;
+  }
+}
 
+.hero__image {
+  position: relative;
+}
 @media (min-width: 48rem) {
   .hero__image {
     position: absolute;
-    top: -15.25rem;
+    top: -13.25rem;
     right: -18.625rem;
     overflow: hidden;
+    z-index: -1;
+  }
+}
+@media (min-width: 69.375rem) {
+  .hero__image {
+    position: absolute;
+    top: -16.25rem;
+    right: -20.625rem;
   }
 }
 
@@ -340,6 +399,13 @@ main {
 
 #courses {
   background: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%);
+  width: auto;
+  padding-bottom: 5.375rem;
+}
+@media (min-width: 69.375rem) {
+  #courses {
+    padding-bottom: 8.75rem;
+  }
 }
 
 .main-footer {
@@ -349,13 +415,14 @@ main {
   align-items: center;
   flex-wrap: wrap;
   gap: 1rem;
-  grid-area: footer;
-  padding: 2.25rem 1rem;
-  max-width: 100%;
+  padding-top: 2.25rem;
+  padding-bottom: 2.25rem;
+  width: 100%;
 }
-@media (min-width: 48rem) {
+@media (min-width: 69.375rem) {
   .main-footer {
-    padding: 2.25rem 2.5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
 }
 

@@ -36,4 +36,11 @@
   &:hover {
     background: $hover-sunrise;
   }
+
+  @media #{$brkpoint-lg} {
+    @include rounded(2rem);
+    @include text($bodyM, $font-weight--bold, $white);
+    line-height: $headingS;
+    padding: 1.25rem 2rem;
+  }
 }

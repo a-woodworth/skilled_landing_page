@@ -17,8 +17,7 @@ body {
   font-family: $font-family--primary;
   margin: 0;
   padding: 0;
-  min-width: 100vw;
-  min-height: 100vh;
+  overflow-x: hidden;
 }
 
 h1, 
@@ -32,6 +31,11 @@ p {
 h1 {
   @include text($headingL, $font-weight--extra-bold, $slate);
   line-height: $lineL;
+
+    @media #{$brkpoint-xl} {
+      @include text($headingXL, $font-weight--extra-bold, $slate);
+      line-height: $lineXL;
+  }
 }
 
 h2 {

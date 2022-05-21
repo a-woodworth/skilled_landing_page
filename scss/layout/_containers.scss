@@ -2,36 +2,40 @@
 // Containers
 // ___________________________________________________________________
 
-.container {  
-  display: grid;
-  grid-template-rows: 1fr;
-  grid-template-areas: 
-    "header"
-    "main"
-    "footer";
+.container {
+  min-width: calc(100% - 2rem);
   margin-inline: auto;
-  overflow-x: hidden;
+  padding-inline: 1rem;
+
+  @media #{$brkpoint-md} {
+    width: calc(100% - 5rem);
+    padding-inline: 2.5rem;  
+  }
+
+  @media #{$brkpoint-lg} {
+    width: calc(100% - (10.3125rem * 2));
+    padding-inline: 10.3125rem;
+  }
 }
 
-.course_container {
+.course-container {
   display: flex;
   flex-direction: column;
   gap: 2.5rem;
-  padding: 0 1rem;
 
   @media #{$brkpoint-md} {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 1.875rem;
-    padding: 0 2.5rem;
+    width: fit-content;
+    margin-inline: auto;
   }
 
-  @media #{$brkpoint-xl} {
+  @media #{$brkpoint-lg} {
     grid-template-columns:  repeat(3, 1fr);
     column-gap: 1.875rem;
     row-gap: 5rem;
-    padding: 5rem 2.5rem;
-    max-width: 1440px;
-    width: 100%;
+    justify-items: center;
+    align-items: center;
   }
 }

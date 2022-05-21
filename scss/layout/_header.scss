@@ -8,15 +8,19 @@
   align-items: center;
   flex-wrap: wrap;
   gap: 1rem;
-  grid-area: header;
-  padding: 1rem 1rem 1.375rem 1rem;
-  max-width: 100%;
+  padding-top: 1rem;
+  padding-bottom: 2.5rem;
+  width: 100%;
 
   @media #{$brkpoint-md} {
-    padding: 1.5rem 2.5rem 4.5rem 2.5rem;
+    padding-top: 1.5rem;
   }
 }
 
 .logo {
   width: 5.5625rem;
+
+  @media #{$brkpoint-lg} {
+    width: 7.125rem;
+  }
 }
