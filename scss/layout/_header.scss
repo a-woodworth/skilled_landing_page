@@ -2,6 +2,11 @@
 // Header
 // ___________________________________________________________________
 
+header {
+  max-width: 90rem;
+  margin-inline: auto;
+}
+
 .main-header {
   display: flex;
   justify-content: space-between;

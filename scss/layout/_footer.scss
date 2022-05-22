@@ -2,8 +2,11 @@
 // Footer
 // ___________________________________________________________________
 
-.main-footer {
+footer {
   background-color: $color-bg-dark;
+}
+
+.main-footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -12,6 +15,8 @@
   padding-top: 2.25rem;
   padding-bottom: 2.25rem;
   width: 100%;
+  max-width: 90rem;
+  margin-inline: auto;
 
   @media #{$brkpoint-lg} {
     padding-top: 2rem;

@@ -276,6 +276,11 @@ a:focus {
   }
 }
 
+header {
+  max-width: 90rem;
+  margin-inline: auto;
+}
+
 .main-header {
   display: flex;
   justify-content: space-between;
@@ -407,8 +412,11 @@ a:focus {
   }
 }
 
-.main-footer {
+footer {
   background-color: hsl(233, 54%, 16%);
+}
+
+.main-footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -417,6 +425,8 @@ a:focus {
   padding-top: 2.25rem;
   padding-bottom: 2.25rem;
   width: 100%;
+  max-width: 90rem;
+  margin-inline: auto;
 }
 @media (min-width: 69.375rem) {
   .main-footer {
