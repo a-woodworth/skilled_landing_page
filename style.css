@@ -70,13 +70,6 @@ a:focus {
   outline: auto 5px -webkit-focus-ring-color;
 }
 
-header,
-main,
-footer {
-  max-width: 90rem;
-  margin-inline: auto;
-}
-
 .btn {
   border-radius: 1.75rem;
   font-size: 1rem;
@@ -290,7 +283,7 @@ footer {
   flex-wrap: wrap;
   gap: 1rem;
   padding-top: 1rem;
-  padding-bottom: 2.5rem;
+  padding-bottom: 1rem;
   width: 100%;
 }
 @media (min-width: 48rem) {
@@ -322,15 +315,18 @@ footer {
     flex-direction: row;
     justify-content: flex-start;
     flex-wrap: nowrap;
-    padding: 1.375rem 2.5rem 12rem 2.5rem;
+    padding: 1.375rem 2.5rem 11.25rem 2.5rem;
   }
 }
 @media (min-width: 69.375rem) {
   #hero {
-    padding: 8.75rem 10.3125rem 18.25rem 10.3125rem;
+    padding: 8.75rem 10.3125rem 14.125rem 10.3125rem;
   }
 }
 
+.hero__content {
+  padding-bottom: 2rem;
+}
 @media (min-width: 48rem) {
   .hero__content {
     flex-basis: 55%;
