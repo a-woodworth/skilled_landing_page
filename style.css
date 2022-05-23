@@ -30,7 +30,7 @@ h1 {
   color: hsl(233, 54%, 16%);
   line-height: 1.275;
 }
-@media (min-width: 90rem) {
+@media (min-width: 69.375rem) {
   h1 {
     font-size: 3.5rem;
     font-weight: 800;
@@ -235,19 +235,17 @@ a:focus {
 }
 
 .container {
-  min-width: calc(100% - 2rem);
+  width: 100%;
   margin-inline: auto;
   padding-inline: 1rem;
 }
 @media (min-width: 48rem) {
   .container {
-    width: calc(100% - 5rem);
     padding-inline: 2.5rem;
   }
 }
-@media (min-width: 69.375rem) {
+@media (min-width: 90rem) {
   .container {
-    width: calc(100% - 20.625rem);
     padding-inline: 10.3125rem;
   }
 }
@@ -273,12 +271,8 @@ a:focus {
     row-gap: 5rem;
     justify-items: center;
     align-items: center;
+    max-width: 69.375rem;
   }
-}
-
-header {
-  max-width: 90rem;
-  margin-inline: auto;
 }
 
 .main-header {
@@ -287,13 +281,18 @@ header {
   align-items: center;
   flex-wrap: wrap;
   gap: 1rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding: 1rem;
   width: 100%;
+  max-width: 69.375rem;
 }
 @media (min-width: 48rem) {
   .main-header {
-    padding-top: 1.5rem;
+    padding: 1.5rem 2.5rem 1rem 2.5rem;
+  }
+}
+@media (min-width: 69.375rem) {
+  .main-header {
+    padding: 1.5rem 0 1rem 0;
   }
 }
 
@@ -311,21 +310,24 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 1.375rem 1rem 0 1rem;
+  padding: 1.375rem 1rem 2.875rem 1rem;
   position: relative;
   width: auto;
+  max-width: 69.375rem;
 }
 @media (min-width: 48rem) {
   #hero {
     flex-direction: row;
     justify-content: flex-start;
     flex-wrap: nowrap;
-    padding: 1.375rem 2.5rem 11.25rem 2.5rem;
+    padding: 6.25rem 2.5rem 11.25rem 2.5rem;
   }
 }
 @media (min-width: 69.375rem) {
   #hero {
-    padding: 8.75rem 10.3125rem 14.125rem 10.3125rem;
+    padding-top: 8.75rem;
+    padding-bottom: 14.125rem;
+    padding: 8.75rem 0rem 14.125rem 0rem;
   }
 }
 
@@ -337,9 +339,9 @@ header {
     flex-basis: 55%;
   }
 }
-@media (min-width: 90rem) {
+@media (min-width: 69.375rem) {
   .hero__content {
-    flex-basis: 65%;
+    flex-basis: 60%;
   }
 }
 
@@ -351,7 +353,7 @@ header {
     width: 25rem;
   }
 }
-@media (min-width: 90rem) {
+@media (min-width: 69.375rem) {
   .hero__heading {
     margin-bottom: 1.875rem;
     width: 28.75rem;
@@ -366,7 +368,7 @@ header {
     width: 25rem;
   }
 }
-@media (min-width: 90rem) {
+@media (min-width: 69.375rem) {
   .hero__text {
     font-size: 1.125rem;
     font-weight: 500;
@@ -383,8 +385,8 @@ header {
 @media (min-width: 48rem) {
   .hero__image {
     position: absolute;
-    top: -13.25rem;
-    right: -18.625rem;
+    top: -11.25rem;
+    right: -17.625rem;
     overflow: hidden;
     z-index: -1;
   }
@@ -393,7 +395,7 @@ header {
   .hero__image {
     position: absolute;
     top: -16.25rem;
-    right: -20.625rem;
+    right: -31.625rem;
   }
 }
 
@@ -417,21 +419,24 @@ footer {
 }
 
 .main-footer {
+  background-color: hsl(233, 54%, 16%);
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   gap: 1rem;
-  padding-top: 2.25rem;
-  padding-bottom: 2.25rem;
+  padding: 2.25rem 1rem;
   width: 100%;
-  max-width: 90rem;
-  margin-inline: auto;
+  max-width: 69.375rem;
+}
+@media (min-width: 48rem) {
+  .main-footer {
+    padding: 2.5rem 2.5rem;
+  }
 }
 @media (min-width: 69.375rem) {
   .main-footer {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding: 2rem 0;
   }
 }
 

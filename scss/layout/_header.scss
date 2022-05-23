@@ -2,23 +2,22 @@
 // Header
 // ___________________________________________________________________
 
-header {
-  max-width: 90rem;
-  margin-inline: auto;
-}
-
 .main-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   gap: 1rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding: 1rem;
   width: 100%;
+  max-width: 69.375rem;
 
   @media #{$brkpoint-md} {
-    padding-top: 1.5rem;
+    padding: 1.5rem 2.5rem 1rem 2.5rem;
+  }
+
+  @media #{$brkpoint-lg} {
+    padding: 1.5rem 0 1rem 0;
   }
 }
 

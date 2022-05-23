@@ -3,17 +3,15 @@
 // ___________________________________________________________________
 
 .container {
-  min-width: calc(100% - 2rem);
+  width: 100%;
   margin-inline: auto;
   padding-inline: 1rem;
 
   @media #{$brkpoint-md} {
-    width: calc(100% - 5rem);
     padding-inline: 2.5rem;  
   }
 
-  @media #{$brkpoint-lg} {
-    width: calc(100% - (10.3125rem * 2));
+  @media #{$brkpoint-xl} {
     padding-inline: 10.3125rem;
   }
 }
@@ -37,5 +35,6 @@
     row-gap: 5rem;
     justify-items: center;
     align-items: center;
+    max-width: 69.375rem;
   }
 }

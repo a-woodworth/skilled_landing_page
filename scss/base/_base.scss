@@ -32,7 +32,7 @@ h1 {
   @include text($headingL, $font-weight--extra-bold, $slate);
   line-height: $lineL;
 
-    @media #{$brkpoint-xl} {
+    @media #{$brkpoint-lg} {
       @include text($headingXL, $font-weight--extra-bold, $slate);
       line-height: $lineXL;
   }
