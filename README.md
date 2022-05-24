@@ -21,7 +21,7 @@ Users should be able to:
 - See hover states for interactive elements
 
 ### Links
-- Solution URL: [Solution]()
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/landing-page-responsive-design-with-schema-markup-grid-flexbox-eNZfZitEKK)
 - Live Site URL: [Live Site](https://a-woodworth.github.io/skilled_landing_page/)
 
 ### Screenshots
