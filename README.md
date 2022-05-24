@@ -2,6 +2,15 @@
 
 This is a solution to the [Skilled e-learning landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/skilled-elearning-landing-page-S1ObDrZ8q). 
 
+## Table of contents
+
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshots](#screenshots)
+  - [Links](#links)
+  - [Built with](#built-with)
+  - [Useful resources](#useful-resources)
+
 ## Overview
 
 ### The challenge
@@ -15,11 +24,19 @@ Users should be able to:
 - Solution URL: [Solution]()
 - Live Site URL: [Live Site](https://a-woodworth.github.io/skilled_landing_page/)
 
-### Screenshot
+### Screenshots
+
+**Desktop**
 
 ![Desktop Sceenshot](/screenshots/Desktop-screenshot-1440px.png)
 
+
+**Tablet**
+
 ![Tablet Sceenshot](/screenshots/tablet-screenshot-768px.png)
+
+
+**Mobile**
 
 ![Mobile Sceenshot](/screenshots/mobile-screenshot-375px.png)
 

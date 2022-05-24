@@ -419,7 +419,6 @@ footer {
 }
 
 .main-footer {
-  background-color: hsl(233, 54%, 16%);
   display: flex;
   justify-content: space-between;
   align-items: center;
