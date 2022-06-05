@@ -2,6 +2,8 @@
 // Footer
 // ___________________________________________________________________
 
+@use '../utilities/variables' as *;
+
 footer {
   background-color: $color-bg-dark;
 }

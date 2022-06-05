@@ -2,6 +2,9 @@
 // Card Styles
 // ___________________________________________________________________
 
+@use '../utilities/variables' as *;
+@use '../utilities/mixins' as *;
+
 .card {
   @media #{$brkpoint-md} {
     height: 16.25rem;

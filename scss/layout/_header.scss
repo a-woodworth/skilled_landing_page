@@ -2,6 +2,8 @@
 // Header
 // ___________________________________________________________________
 
+@use '../utilities/variables' as *;
+
 .main-header {
   display: flex;
   justify-content: space-between;
